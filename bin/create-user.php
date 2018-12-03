@@ -11,8 +11,9 @@ Usage: create-user.php <name> <email> <password>
 
 list(, $name, $email, $password) = $_SERVER['argv'];
 
+/** @var Nette\DI\Container $container */
 $container = require __DIR__ . '/../app/bootstrap.php';
-/** @var App\Model\UserManager $manager */
+
 $manager = $container->getByType(App\Model\UserManager::class);
 
 try {

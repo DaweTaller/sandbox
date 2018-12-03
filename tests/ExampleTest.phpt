@@ -6,6 +6,7 @@ use Nette;
 use Tester;
 use Tester\Assert;
 
+/** @var Nette\DI\Container $container */
 $container = require __DIR__ . '/bootstrap.php';
 
 
